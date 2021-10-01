@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Entrega 2</title>
+</head>
+<style>
+body{
+	background-image: url("fondo.jpg");
+	background-size: cover;
+}
+.cuadro{
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	top: 45px;
+	left: 100px;
+	border-radius: 13px;
+	border: red solid 3px;
+	background-image: url("fondo2.jpg");
+	font-family: Forte;
+	font-size: 50px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	color: black;
+}
+.bode{
+	position: absolute;
+	width: 200px;
+	height: 80px;
+	top: 130px;
+	left: 130px;
+	border-radius: 13px;
+	border: red solid 3px;
+	background: #DACD0D;
+	font-size: 40px;
+	font-family: Forte;
+	padding-left: 30px;
+	box-sizing: border-box;
+	color: black;
+}
+.tilin{
+	position: absolute;
+	width: 200px;
+	height: 80px;
+	top: 230px;
+	left: 130px;
+	border-radius: 13px;
+	border: red solid 3px;
+	background: #DACD0D;
+	font-size: 40px;
+	font-family: Forte;
+	padding-left: 30px;
+	box-sizing: border-box;
+	color: black;
+}
+.inge{
+	position: absolute;
+	width: 200px;
+	height: 80px;
+	top: 430px;
+	left: 130px;
+	border-radius: 13px;
+	border: red solid 3px;
+	background: #DACD0D;
+	font-size: 40px;
+	font-family: Forte;
+	padding-left: 30px;
+	box-sizing: border-box;
+	color: black;
+}
+
+.linneo{
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	top: 45px;
+	left: 730px;
+	border-radius: 13px;
+	border: red solid 3px;
+	background-image: url("fondo2.jpg");
+	font-size: 40px;
+	font-family: Forte;
+	padding-left: 30px;
+	box-sizing: border-box;
+	color: black;
+}
+.grande{
+	position: absolute;
+	width: 1200px;
+	height: 1000px;
+	top: 700px;
+	left: 47px;
+	border-radius: 13px;
+	border: red solid 3px;
+	background-image: url("fondo3.jpg");
+	background-size: cover;
+	font-size: 40px;
+	font-family: Forte;
+	padding-left: 30px;
+	box-sizing: border-box;
+	color: black;
+}
+.gato{
+	position: absolute;
+	width: 1000px;
+	height: 700px;
+	top: 850px;
+	left: 170px;
+	border-radius: 13px;
+	border: red solid 3px;
+	background-image: url("fondo4.png");
+	background-size: cover;
+	font-size: 40px;
+	font-family: Forte;
+	padding-left: 30px;
+	box-sizing: border-box;
+	color: black;
+}
+.peque{
+	position: absolute;
+	width: 250px;
+	height: 150px;
+	top: 850px;
+	left: 270px;
+	border-radius: 13px;
+	border: red solid 3px;
+	background-image: url("fondo5.png");
+	background-size: cover;
+	font-size: 40px;
+	font-family: Forte;
+	padding-left: 30px;
+	box-sizing: border-box;
+	color: black;
+}
+</style>
+<body>
+<div class="cuadro" id="cu">Restaurante</div>
+<div class="bode" id="bo"></div>
+<div class="tilin" id="ti"></div>
+<div class="inge" id="fi" onclick="quiera()">Ingresar</div>
+<div class="linneo" id="li"></div>
+<div class="grande"></div>
+<div class="gato"></div>
+<div class="peque" id="pe" onclick="cupra()"></div>
+<audio src="sonido.mp3" id="travis"></audio>
+<form>
+	<input type="text" id="cq" class="bode" placeholder="Comida">
+	<input type="text" id="ct" class="tilin" placeholder="Precio">
+</form>
+<script>
+	function quiera(){
+		inge=cq.value;
+        moveuah=" <div class='bode'>"+inge+"</div> ";
+        conte=li.innerHTML+moveuah;
+        conte= conte+moveuah;
+        li.innerHTML=conte;
+        console.log(conte)
+	
+	
+		inge=ct.value;
+        moveuah=" <div class='tilin'>"+inge+"</div> ";
+        conte=li.innerHTML+moveuah;
+        conte= conte+moveuah;
+        li.innerHTML=conte;
+        console.log(conte)
+	}
+	function cupra() {
+			x=Math.floor((Math.random() * (1001-1))+1);
+			y=Math.floor((Math.random() * (101-1))+1);
+			pe.style.left=x+"px";
+			pe.style.top=y+"px";
+			travis.play();
+		}
+</script>
+</body>
+</body>
+</html>
